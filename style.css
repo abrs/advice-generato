@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
+:root {
+  --comp-width: 350px;
+  --dice-width: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  font-family: "Dongle", sans-serif;
+  background-color: #1f2632;
+  font-weight: 800;
+}
+
+.card {
+  background-color: #323a49;
+  width: var(--comp-width);
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  row-gap: 2rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.card__title {
+  color: #52ffa8;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.card__quote {
+  font-size: 28px;
+  color: #ddd;
+}
+
+.card__spliter {
+  position: absolute;
+  bottom: calc(var(--dice-width) / 1.2);
+  left: calc(var(--comp-width) / 2 - (var(--dice-width) * 2.48));
+}
+
+.card__dice {
+  cursor: pointer;
+  width: var(--dice-width);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #52ffa8;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  bottom: calc(-1 * var(--dice-width) / 2);
+  left: calc(var(--comp-width) / 2 - (var(--dice-width) / 2));
+}
+/*# sourceMappingURL=style.css.map */
