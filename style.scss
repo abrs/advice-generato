@@ -2,6 +2,7 @@
 :root {
   --comp-width: 350px;
   --dice-width: 60px;
+  --clr-light-cyan: 150, 100%, 90%;
 }
 
 * {
@@ -57,5 +58,11 @@ body {
     position: absolute;
     bottom: calc(-1 * var(--dice-width) / 2);
     left: calc(var(--comp-width) / 2 - (var(--dice-width) / 2));
+    
+    &:hover {
+      
+      background-color: hsl(150, 100%, 60%);
+      box-shadow: 0 0 10px 4px hsl(150, 100%, 60%);;
+    }
   }
 }

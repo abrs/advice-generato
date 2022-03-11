@@ -2,6 +2,7 @@
 :root {
   --comp-width: 350px;
   --dice-width: 60px;
+  --clr-light-cyan: 150, 100%, 90%;
 }
 
 * {
@@ -58,5 +59,10 @@ body {
   position: absolute;
   bottom: calc(-1 * var(--dice-width) / 2);
   left: calc(var(--comp-width) / 2 - (var(--dice-width) / 2));
+}
+
+.card__dice:hover {
+  background-color: #33ff99;
+  box-shadow: 0 0 10px 4px #33ff99;
 }
 /*# sourceMappingURL=style.css.map */
